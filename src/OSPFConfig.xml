@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<OSPFASConfig>
+<Area id="0.0.0.0">
+<AddressRange address="H1" mask="H1" />
+<AddressRange address="H2" mask="H2" />
+<AddressRange address="R1>R2" mask="R1>R2" />
+<AddressRange address="R2>R1" mask="R2>R1" />
+<AddressRange address="R1>R4" mask="R1>R4" />
+<AddressRange address="R4>R1" mask="R4>R1" />
+
+<AddressRange address="R2>R3" mask="R2>R3" />
+<AddressRange address="R3>R2" mask="R3>R2" />
+<AddressRange address="R2>R7" mask="R2>R7" />
+<AddressRange address="R7>R2" mask="R7>R2" />
+
+<AddressRange address="R3>R6" mask="R3>R6" />
+<AddressRange address="R6>R3" mask="R6>R3" />
+<AddressRange address="R5>R4" mask="R5>R4" />
+<AddressRange address="R4>R5" mask="R4>R5" />
+
+<AddressRange address="R5>R8" mask="R5>R8" />
+<AddressRange address="R8>R5" mask="R8>R5" />
+<AddressRange address="R9>R8" mask="R9>R8" />
+<AddressRange address="R8>R9" mask="R8>R9" />
+
+<AddressRange address="R6>R7" mask="R6>R7" />
+<AddressRange address="R7>R6" mask="R7>R6" />
+<AddressRange address="R8>R7" mask="R8>R7" />
+<AddressRange address="R7>R8" mask="R7>R8" />
+
+<AddressRange address="R9>R10" mask="R9>R10" />
+<AddressRange address="R10>R9" mask="R10>R9" />
+<AddressRange address="R9>R11" mask="R9>R11" />
+<AddressRange address="R11>R9" mask="R11>R9" />
+
+<AddressRange address="R9>R12" mask="R9>R12" />
+<AddressRange address="R12>R9" mask="R12>R9" />
+<AddressRange address="R10>R14" mask="R10>R14" />
+<AddressRange address="R14>R10" mask="R14>R10" />
+
+<AddressRange address="R11>R13" mask="R11>R13" />
+<AddressRange address="R13>R11" mask="R13>R11" />
+<AddressRange address="R15>R12" mask="R15>R12" />
+<AddressRange address="R12>R15" mask="R12>R15" />
+
+<AddressRange address="R15>R13" mask="R15>R13" />
+<AddressRange address="R13>R15" mask="R13>R15" />
+<AddressRange address="R14>R15" mask="R14>R15" />
+<AddressRange address="R15>R14" mask="R15>R14" />
+
+
+
+</Area>
+<Router name="**" RFC1583Compatible="true">
+<BroadcastInterface ifName='eth[*]' areaID='0.0.0.0' interfaceOutputCost='0' />
+<PointToPointInterface ifName='ppp[*]' areaID='0.0.0.0' interfaceOutputCost='0' />
+</Router>
+</OSPFASConfig>
